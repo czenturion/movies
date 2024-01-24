@@ -1,0 +1,9 @@
+.link {
+    padding: 10px;
+    width: 150px;
+}
+
+.link:hover {
+    background-color: gray;
+    cursor: pointer;
+}
