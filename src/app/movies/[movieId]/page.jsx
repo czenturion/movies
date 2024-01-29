@@ -1,6 +1,8 @@
 "use client"
 import { useRouter } from "next/navigation"
 
+import s from "../movies.module.css"
+
 
 const MovieDetails = ({ params }) => {
     const router = useRouter()
@@ -10,7 +12,7 @@ const MovieDetails = ({ params }) => {
     }
 
     return <>
-        <h1>Movie: { params.movieId }</h1>
+        <h1 className={s.filmTitle}>Movie: { params.movieId }</h1>
         <button onClick={clickHandler}>Go back</button>
     </>
 
