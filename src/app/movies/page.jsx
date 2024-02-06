@@ -1,6 +1,7 @@
 "use client"
-import { useRouter } from "next/navigation"
-import s from "./movies.module.css"
+import {useRouter} from "next/navigation"
+import s from "@/app/movies/movies.module.css"
+import MainAppLayout from "@/widgets/layouts/layouts"
 
 const Movies = () => {
     const router = useRouter()
@@ -10,15 +11,15 @@ const Movies = () => {
         router.push(`/movies/${id}`)
     }
 
-    return <>
-        <h1>Movies page</h1>
+    return <MainAppLayout>
+        <h1 className={s.movies}>Movies page</h1>
         <div className={s.filmsList}>
             {filmsList.map(id => <span
-                className={s.link} onClick={() =>
-                clickHandler(id)}>Movie id: {id}</span>)}
+                className={s.link}
+                onClick={() => clickHandler(id)}>Movie id: {id}</span>)}
         </div>
         <button onClick={() => router.push("/")}>Go home</button>
-    </>
+    </MainAppLayout>
 }
 
 export default Movies

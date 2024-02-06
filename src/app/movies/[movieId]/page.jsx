@@ -15,7 +15,6 @@ const MovieDetails = ({ params }) => {
         <h1 className={s.filmTitle}>Movie: { params.movieId }</h1>
         <button onClick={clickHandler}>Go back</button>
     </>
-
 }
 
 export default MovieDetails
