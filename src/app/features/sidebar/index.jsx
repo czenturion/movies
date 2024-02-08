@@ -10,13 +10,13 @@ import scrollUp from "@/../public/icons/scrollUp.svg"
 
 const Sidebar = () => {
     return <div className={s.sidebar}>
-        <Image src={search} alt="search" width={44} height={44}/>
-        <Image src={home} alt="search" width={44} height={44}/>
-        <Image src={watch} alt="search" width={44} height={44}/>
-        <Image src={charts} alt="search" width={44} height={44}/>
-        <Image src={favorite} alt="search" width={44} height={44}/>
-        <Image src={profile} alt="search" width={44} height={44}/>
-        <Image src={scrollUp} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={search} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={home} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={watch} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={charts} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={favorite} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={profile} alt="search" width={44} height={44}/>
+        <Image className={s.button} src={scrollUp} alt="search" width={44} height={44}/>
     </div>
 }
 

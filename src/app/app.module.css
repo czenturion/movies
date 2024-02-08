@@ -22,17 +22,31 @@
     margin-top: 205px;
 }
 
-.sidebar Image:last-child {
+.button {
+    cursor: pointer;
+}
+
+.homePageButton {
+    cursor: pointer;
+    width: 200px;
+}
+
+.sidebar .button:last-child {
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1876px;
     width: 100%;
 }
