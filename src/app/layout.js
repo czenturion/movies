@@ -8,7 +8,13 @@ import s from "./app.module.css"
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
-      <body className={s.app}>{children}</body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+        <title>FILMS</title>
+    </head>
+    <body className={s.app}>{children}</body>
     </html>
-  )
+ )
 }

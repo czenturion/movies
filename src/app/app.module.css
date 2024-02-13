@@ -1,5 +1,5 @@
 .app {
-    background-color: black;
+    background-color: #09090C;
     box-sizing: border-box;
     padding: 0;
     display: flex;
@@ -26,9 +26,54 @@
     cursor: pointer;
 }
 
+.homePage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*background-image: url("../../public/images/img1.png");*/
+}
+
+.titleBlock {
+    margin-top: 294px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 886px;
+    color: white;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.homePageBackground {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+}
+
 .homePageButton {
     cursor: pointer;
-    width: 200px;
+    font-family: "Roboto", serif;
+    width: 243px;
+    padding: 24px 32px 24px 32px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 16px;
 }
 
 .sidebar .button:last-child {
