@@ -19,8 +19,8 @@ const HomePage = () => {
                 <Image src={img2} alt="title" width={576} height={228}/>
                 <p className={s.text}>Неувядающий авантюрист и пытливый археолог-исследователь по‑прежнему в седле.</p>
                 <div className={s.buttons}>
-                    <button className={s.homePageButton} onClick={clickHandler}>Смотреть</button>
-                    <button className={s.homePageButton} onClick={clickHandler}>О фильме</button>
+                    <button className={`${s.homePageButton} ${s.watch}`} onClick={clickHandler}>Смотреть</button>
+                    <button className={`${s.homePageButton} ${s.about}`} onClick={clickHandler}>О фильме</button>
                 </div>
             </div>
         </div>
